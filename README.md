@@ -1,8 +1,8 @@
 # Rose3rdProj
 My third GitHub project.
 
-Description
+Description:
 Workday CLI
 
-Author
+Author:
 Rose Cao
