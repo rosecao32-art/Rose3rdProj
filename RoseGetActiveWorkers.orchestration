@@ -229,7 +229,7 @@
                                 "isDisabled": { "_type": "Boolean", "_value": false },
                                 "errorHandler": { "_type": ["Opt", "ErrorHandler"], "_value": null },
                                 "inputData": { "_type": ["Expr", ["Iterator", ["Opt", "Any"]]], "_value": { "type": { "_type": "Type", "_value": ["Iterator", ["Xml", { "_type": ["Opt", "XmlSchemaRef"], "_value": null }]] }, "source": { "_type": "String", "_value": "iterator.combineXMLIterators(data.GetWorkersPage1.response.unwrapSoap().iterator(\"//*[local-name()='Worker']\"), data.FetchRemainingPages.WorkersXml.iterator(\"//*[local-name()='Worker']\"))" }, "isAuto": { "_type": "Boolean", "_value": true } } },
-                                "filter": { "_type": ["Opt", ["Expr", "Boolean"]], "_value": { "_type": ["Expr", "Boolean"], "_value": { "type": { "_type": "Type", "_value": "Boolean" }, "source": { "_type": "String", "_value": "data.FilterActiveWorkers.item.stringAtXPath(\".//*[local-name()='Worker_Status']\") == \"Active\"" }, "isAuto": { "_type": "Boolean", "_value": false } } } },
+                                "filter": { "_type": ["Opt", ["Expr", "Boolean"]], "_value": { "_type": ["Expr", "Boolean"], "_value": { "type": { "_type": "Type", "_value": "Boolean" }, "source": { "_type": "String", "_value": "data.FilterActiveWorkers.item.stringAtXPath(\"//*[local-name()='Worker_Status']\") == \"Active\"" }, "isAuto": { "_type": "Boolean", "_value": false } } } },
                                 "aggregateNode": {
                                   "_type": ["Opt", "Aggregate"],
                                   "_value": {
@@ -245,7 +245,7 @@
                                             "_type": "TextFoldValue",
                                             "_value": {
                                               "nameProp": { "_type": "Identifier", "_value": "Rows" },
-                                              "data": { "_type": ["Expr", "Text"], "_value": { "type": { "_type": "Type", "_value": "Text" }, "source": { "_type": "String", "_value": "s\"${data.FilterActiveWorkers.item.stringAtXPath(\".//*[local-name()='ID' and @*[local-name()='type']='Employee_ID']\")},${data.FilterActiveWorkers.item.stringAtXPath(\".//*[local-name()='Worker_Status']\")}\"" }, "isAuto": { "_type": "Boolean", "_value": false } } },
+                                              "data": { "_type": ["Expr", "Text"], "_value": { "type": { "_type": "Type", "_value": "Text" }, "source": { "_type": "String", "_value": "s\"${data.FilterActiveWorkers.item.stringAtXPath(\"//*[local-name()='ID' and @*[local-name()='type']='Employee_ID']\")},${data.FilterActiveWorkers.item.stringAtXPath(\"//*[local-name()='Worker_Status']\")}\"" }, "isAuto": { "_type": "Boolean", "_value": false } } },
                                               "condition": { "_type": ["Opt", ["Expr", "Boolean"]], "_value": null },
                                               "contentType": { "_type": "String", "_value": "text/plain" },
                                               "lineSeparator": { "_type": "String", "_value": "\n" },
