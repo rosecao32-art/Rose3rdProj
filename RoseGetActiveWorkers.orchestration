@@ -3,6 +3,7 @@
   "_type": "Flow",
   "_value": {
     "id": { "_type": "String", "_value": "c1b984e70e4842bc9e0ca886c5c6e7a1" },
+    "name": { "_type": "Identifier", "_value": "RoseGetActiveWorkers" },
     "type": { "_type": "FlowType", "_value": ".maya.IntegrationFrameworkTrigger" },
     "start": {
       "_type": "StartIntegrationFrameworkTrigger",
