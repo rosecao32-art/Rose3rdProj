@@ -54,7 +54,50 @@
                 "List",
                 "Node"
             ],
-            "_value": []
+            "_value": [
+                {
+                    "_type": "CreateTextTemplate",
+                    "_value": {
+                        "name": {
+                            "_type": "Identifier",
+                            "_value": "SampleText"
+                        },
+                        "isDisabled": {
+                            "_type": "Boolean",
+                            "_value": false
+                        },
+                        "errorHandler": {
+                            "_type": [
+                                "Opt",
+                                "ErrorHandler"
+                            ],
+                            "_value": null
+                        },
+                        "message": {
+                            "_type": "TextTemplate",
+                            "_value": "Hello from RoseTest."
+                        },
+                        "contentType": {
+                            "_type": "String",
+                            "_value": "text/plain"
+                        },
+                        "formatRef": {
+                            "_type": [
+                                "Opt",
+                                "TextFormatRef"
+                            ],
+                            "_value": null
+                        },
+                        "notes": {
+                            "_type": [
+                                "List",
+                                "Note"
+                            ],
+                            "_value": []
+                        }
+                    }
+                }
+            ]
         },
         "notes": {
             "_type": [
