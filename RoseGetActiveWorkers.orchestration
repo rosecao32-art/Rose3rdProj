@@ -245,7 +245,7 @@
                                             "_type": "TextFoldValue",
                                             "_value": {
                                               "nameProp": { "_type": "Identifier", "_value": "Rows" },
-                                              "data": { "_type": ["Expr", "Text"], "_value": { "type": { "_type": "Type", "_value": "Text" }, "source": { "_type": "String", "_value": "s\"${data.FilterActiveWorkers.item.stringAtXPath(\\\".//*[local-name()='ID' and @*[local-name()='type']='Employee_ID']\\\")},${data.FilterActiveWorkers.item.stringAtXPath(\\\".//*[local-name()='Worker_Status']\\')}\"" }, "isAuto": { "_type": "Boolean", "_value": false } } },
+                                              "data": { "_type": ["Expr", "Text"], "_value": { "type": { "_type": "Type", "_value": "Text" }, "source": { "_type": "String", "_value": "s\"${data.FilterActiveWorkers.item.stringAtXPath(\".//*[local-name()='ID' and @*[local-name()='type']='Employee_ID']\")},${data.FilterActiveWorkers.item.stringAtXPath(\".//*[local-name()='Worker_Status']\")}\"" }, "isAuto": { "_type": "Boolean", "_value": false } } },
                                               "condition": { "_type": ["Opt", ["Expr", "Boolean"]], "_value": null },
                                               "contentType": { "_type": "String", "_value": "text/plain" },
                                               "lineSeparator": { "_type": "String", "_value": "\n" },
